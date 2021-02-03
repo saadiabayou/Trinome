@@ -4,7 +4,7 @@ Created on Sun Nov 22 14:14:15 2020
 
 @author: Saadia Bayou
 """
-# Mon module trinome
+# Classe Trinome
 
 from math import sqrt 
 

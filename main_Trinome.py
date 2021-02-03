@@ -12,12 +12,17 @@ from Trinome import *
 # *** Tests classe Trinome *** 
 
 
+# Definition de 3 cas - valeurs discriminant delta -  
+
+# Instanciation 
 
 t1=Trinome(1,4,3) # discriminant positif - 2 solutions 
 t2=Trinome(1,0,0) # discriminant égal à zéro - une solution 
 t3=Trinome(1,2,3) # discriminant négatif 
 
-    
+   
+
+   
 print ("\nLes coefficients du trinome sont: \na=",t1.a,"\nb=",t1.b,"\nc=",t1.c)
 print("\nLe trinome s'écrit : ",t1)
 print("\nLa valeur du discriminant vaut : \ndelta =", t1.delta())
