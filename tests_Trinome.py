@@ -16,13 +16,13 @@ from Trinome import *
 
 # Instanciation 
 
-t1=Trinome(1,4,3) # discriminant positif - 2 solutions 
-t2=Trinome(1,0,0) # discriminant égal à zéro - une solution 
-t3=Trinome(1,2,3) # discriminant négatif 
+t1=Trinome(1,4,3) # discriminant delta positif - 2 solutions 
+t2=Trinome(1,0,0) # discriminant delta égal à zéro - une solution 
+t3=Trinome(1,2,3) # discriminant delta négatif - pas de solution réelle
 
    
 
-   
+# test1- delta positif 
 print ("\nLes coefficients du trinome sont: \na=",t1.a,"\nb=",t1.b,"\nc=",t1.c)
 print("\nLe trinome s'écrit : ",t1)
 print("\nLa valeur du discriminant vaut : \ndelta =", t1.delta())
@@ -31,7 +31,7 @@ try:
 except ZeroDivisionError: 
     print("\nLe coefficient a est égal à zéro pas de solution possible")
 
-
+# test2- delta égal zéro
 print ("\nLes coefficients du trinome sont: \na=",t2.a,"\nb=",t2.b,"\nc=",t2.c)
 print("\nLe trinome s'écrit : ",t2)
 print("\nLa valeur du discriminant vaut : \ndelta =", t2.delta())
@@ -40,11 +40,11 @@ try:
 except ZeroDivisionError: 
     print("\nLe coefficient a est égal à zéro pas de solution possible")
         
-        
+# test3-delta négatif          
 print ("\nLes coefficients du trinome sont: \na=",t3.a,"\nb=",t3.b,"\nc=",t3.c)
 print("\nLe trinome s'écrit : ",t3)
 print("\nLa valeur du discriminant vaut : \ndelta =", t3.delta())
 try:
     print("\nLa résolution du trinome est : \nsolution(s):", t3.resolv())
 except ZeroDivisionError: 
-    print("\nLe coefficient a est égal à zéro pas de solution possible")       
+    print("\nLe coefficient a est égal à zéro pas de solution réelle")       
