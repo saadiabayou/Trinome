@@ -34,6 +34,6 @@ for t in T :
 	try:
 		print("\nLa résolution du trinome est : \nsolution(s):", t.resolv())
 	except ZeroDivisionError: 
-		print("\nLe coefficient a est égal à zéro")
+		print("\nLe coefficient a est égal à zéro - cas dégénéré")
 
     
