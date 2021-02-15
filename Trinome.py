@@ -24,7 +24,7 @@ class Trinome (object):
    
     def __str__(self):
         """ Affichage trinome """ 
-        return "t(x) = "+ str(self.a)+"x²+" + str(self.b) + "x" + str(self.c) + ",\non cherche à résoudre : {0.a}x² + {0.b}x + {0.c}".format(self) +" = 0"
+        return "t(x) = "+ str(self.a)+"x²+" + str(self.b) + "x + " + str(self.c) + " \n on cherche à résoudre : {0.a}x² + {0.b}x + {0.c}".format(self) +" = 0"
 
     def delta (self):
         """ Calcul du discriminant delta """
